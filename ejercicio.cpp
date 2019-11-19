@@ -47,7 +47,7 @@ int main(){
     float xmin = -1; //En psi 1
     float xmax = 1; //En psi 2
     
-    float deltat = 0.0003;
+    float deltat = 0.0001;
     float deltax = (xmax - xmin)/Nx;
 
     //psi(t=0)=0
@@ -61,7 +61,7 @@ int main(){
 
     escribe("tiempo.txt", t, pasost);
     escribe("n30.txt", psi, pasosx, pasost);
-
+    // escribe() 
     // float** G = new float*[pasosx];
     // float** I = new float*[pasosx];
 
